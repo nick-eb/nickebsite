@@ -274,6 +274,11 @@ header {
     margin: 0 auto;
 }
 
+.about-me__body a {
+    color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+}
+
 .aboutme__img {
     box-shadow: var(--bs);
 }
