@@ -150,6 +150,13 @@ header {
     font-family: var(--ff-secondary);
 }
 
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .top__navbar {
     list-style-type: none;
     margin: 0;
