@@ -147,6 +147,8 @@ header {
 }
 
 .top__navbar {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -155,14 +157,16 @@ header {
     font-size: 1rem;
 }
 
-@media(max-width: 600px) {
-    .top__navbar {
-        font-size: 3vw;
-    }
+.navbar__li {
+    display: list-item;
+    padding: 0.5rem 0.5rem;
 }
 
-.navbar__li {
-    float: left;
+@media(max-width: 600px) {
+    .navbar__li {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.2rem;
+    }
 }
 
 .navbar__links {
