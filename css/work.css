@@ -164,11 +164,6 @@ header {
     font-family: var(--ff-primary);
 }
 
-.section__main {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 .section__subtitle--main {
     background: var(--clr-accent);
     padding: .5em;
@@ -189,6 +184,17 @@ header {
     height: auto;
 }
 
+@media(max-width: 800px) {
+    .image {
+        width: 100%;
+        height: auto;
+    }
+    .frame {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .textlinks {
     color: var(--clr-accent);
     font-family: var(--ff-primary);
@@ -199,7 +205,7 @@ header {
     text-align: center;
     max-width: 700px;
     margin: 0 auto;
-    padding-bottom: 2em;
+    padding: .25em 1em;
 }
 
 
