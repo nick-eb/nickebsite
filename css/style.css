@@ -111,11 +111,6 @@ h3 {
     font-weight: var(--fw-reg);
 }
 
-
-/* .section__title--intro strong {
-    display: block;
-} */
-
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
@@ -281,10 +276,6 @@ header {
     font-family: var(--ff-secondary);
 }
 
-.aboutme__img {
-    box-shadow: var(--bs);
-}
-
 
 /* table */
 
@@ -335,17 +326,26 @@ header {
 /* table end */
 
 @media (min-width: 600px) {
-    .about-me,
-    .repair {
+    .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
         grid-template-areas: "title img" "subtitle img" "text img";
         grid-column-gap: 2em;
     }
-    .section__title--about {
+    .section__title--about,
+    .section__title--repair {
         grid-area: title;
     }
     .section__subtitle--about {
+        grid-area: subtitle;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100%+2em);
+        padding-left: 1em;
+        padding-right: calc(200px+4em);
+    }
+    .section__subtitle--repair {
         grid-area: subtitle;
         grid-row: 2;
         position: relative;
