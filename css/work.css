@@ -164,6 +164,11 @@ header {
     font-family: var(--ff-primary);
 }
 
+.section__main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .section__subtitle--main {
     background: var(--clr-accent);
     padding: .5em;
