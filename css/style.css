@@ -271,7 +271,8 @@ header {
     margin: 0 auto;
 }
 
-.about-me__body a {
+.about-me__body a,
+.repair a {
     color: var(--clr-accent);
     font-family: var(--ff-secondary);
 }
@@ -369,8 +370,7 @@ header {
 
 .portfolio {
     display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .portfolio__item {
