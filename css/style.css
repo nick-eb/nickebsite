@@ -369,7 +369,8 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 5fr));
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
 }
 
 .portfolio__item {
